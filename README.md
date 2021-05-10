@@ -2,5 +2,15 @@
 Initially, the datasets are downloaded from https://www.yelp.com/dataset
 
 <h3>Read_Json.ipynb:</h3>
-For the project only Business and Reviews datasets are used. Which are in the form of JSON. By using JSON loads, Reviews and Business datasets are converted into CSV format. 
-Based on Business ID, we merge both the review and business files to kame the final data.
+1. For the project only Business and Reviews datasets are used. Which are in the form of JSON. By using JSON loads, Reviews and Business datasets are converted into CSV format. 
+2. Based on Business ID, we merge both the review and business files to kame the final_data.
+
+<h3>EDA_and_Initial_models.ipynb</h3>
+1. By using final_data, perform cleaning on data by using features. Later, basic EDA is performed and features csv (final_full_features.csv) file is generated. 
+2. By using the features files, initial models are developed. The initital models are LGBM and Cat Boost Classifier.
+
+<h3> LinearSVM.ipynb</h3>
+1. By using final_full_features.csv file, and performing text classification and vectorization, on the data, full_tfidf_data.csv will be generated to perform modelling on the whole data using Linear SVM model.
+
+<h3>LinearSVM_Restaurants.ipynb</h3>
+1. By using filters, restaurants reviews are taked into separate file.Features are generated into restaurant_features.csv file. Text classification and vectorization are performed on the data to obtain restaurant_tfidf_data.csv. Same Linear SVM model is performed on the restaurants data. A single restaurant business ID is taken to make analysis on research question.
