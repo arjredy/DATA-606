@@ -1,6 +1,5 @@
 # DATA-606 Capstone Project on Sentiment Analysis on Yelp Data Reviews
-1.Initially, the datasets are downloaded from https://www.yelp.com/dataset. 
-2.As all the datasets are of huge size, each dataset is split into 2 files. Business.csv is only a single file as its file size is below 25MB.
+1.Initially, the datasets are downloaded from https://www.yelp.com/dataset. <br>2.As all the datasets are of huge size, each dataset is split into 2 files. Business.csv is only a single file as its file size is below 25MB.
 
 <h3>Read_Json.ipynb:</h3>
 1. For the project only Business and Reviews datasets are used. Which are in the form of JSON. By using JSON loads, Reviews and Business datasets are converted into CSV format.
